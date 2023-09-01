@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Blue
+  - Yellow
+  - Red
+  - Default
+  - Score
+  - Pause Menu
+  - Timer
+  - EndGameTimer
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Triangle
+  - Square
+  - Circle
+  - Grid
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Button
+    uniqueID: 3848562215
+    locked: 0
+  - name: Door
+    uniqueID: 2780485657
+    locked: 0
+  - name: Grid
+    uniqueID: 3104625281
+    locked: 0
+  - name: Player
+    uniqueID: 1091014135
+    locked: 0
+  - name: Canvas
+    uniqueID: 3994687271
+    locked: 0
