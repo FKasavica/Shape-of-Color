@@ -9,6 +9,8 @@ public class Door : TriggerChecker
     [SerializeField] private bool isColorOverall;
     [SerializeField] private bool isShapeOverall;
 
+    private Animator _animator;
+
     Shake CameraShaker;
     AudioManager AM;
 
@@ -17,8 +19,13 @@ public class Door : TriggerChecker
         isColorOverall = true;
         isShapeOverall = true;
 
-        if (this.gameObject.tag.ToString() == "Default") isColorOverall = false;
-        if (LayerMask.LayerToName(this.gameObject.layer) == "Default") isShapeOverall = false;
+        if (gameObject.CompareTag("Default")) isColorOverall = false;
+        if (gameObject.layer == 0) isShapeOverall = false;
+
+        if (TryGetComponent(out Animator anim))
+        {
+            _animator = anim;
+        }
     }
 
     private void Start()
@@ -27,33 +34,60 @@ public class Door : TriggerChecker
         AM = AudioManager.Instance;
     }
 
-    public override void CheckTriggerCondition(Collider2D collision)
+    public override void ApplyEffect(Collider2D collision, bool conditionMet)
     {
-        if (isColorOverall)
+        if(conditionMet)
         {
-            if (!this.gameObject.CompareTag(collision.gameObject.tag))
-            {
-                CameraShaker.ShakeCamera();
-                AM.PlayUmphSound();
-                return;
-            }
+            if (_animator) _animator.SetBool("canPass", true);
+            _box2D.enabled = false;
         }
-
-        if (isShapeOverall)
+        else
         {
-            if (this.gameObject.layer != collision.gameObject.layer)
-            {
-                CameraShaker.ShakeCamera();
-                AM.PlayUmphSound();
-                return;
-            }
+            CameraShaker.ShakeCamera();
+            AM.PlayUmphSound();
         }
+        //if (isColorOverall)
+        //{
+        //    if (!this.gameObject.CompareTag(collision.gameObject.tag))
+        //    {
+        //        CameraShaker.ShakeCamera();
+        //        AM.PlayUmphSound();
+        //        return;
+        //    }
+        //}
 
-        _box2D.enabled = false;
+        //if (isShapeOverall)
+        //{
+        //    if (this.gameObject.layer != collision.gameObject.layer)
+        //    {
+                
+        //        return;
+        //    }
+        //}
+
+        
     }
 
     public override void CheckExitCondition(Collider2D collision)
     {
+        if (_animator) _animator.SetBool("canPass", false);
         _box2D.enabled = true;
+    }
+
+    public override bool CheckCondition(Collider2D collision)
+    {
+        bool condition1 = true;
+        bool condition2 = true;
+
+        if (isColorOverall)
+        {
+            condition1 = gameObject.CompareTag(collision.gameObject.tag);
+        }
+        if (isShapeOverall)
+        {
+            condition2 = gameObject.layer == collision.gameObject.layer;
+        }
+
+        return condition1 && condition2;
     }
 }

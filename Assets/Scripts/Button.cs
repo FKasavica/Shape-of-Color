@@ -35,20 +35,22 @@ public class Button : TriggerChecker
         _player = SpriteController.Instance;
     }
 
-    public override void CheckTriggerCondition(Collider2D collision)
+    public override void ApplyEffect(Collider2D collision, bool none)
     {
         if (isColorOverall)
         {
-            _player.ChangeColor(_color);
-            _player.gameObject.tag = this.gameObject.tag;
-            _player.transform.DOScale(1f, 0.3f);
+            _player.ChangeColor(_color, gameObject.tag);
         }
         if (isShapeOverall)
         {
-            _player.ChangeShape(_shape);
-            _player.gameObject.layer = this.gameObject.layer;
+            _player.ChangeShape(_shape, gameObject.layer);
         }
     }
 
     public override void CheckExitCondition(Collider2D collision) { }
+
+    public override bool CheckCondition(Collider2D collision)
+    {
+        return true;
+    }
 }

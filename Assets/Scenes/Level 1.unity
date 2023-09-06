@@ -1990,6 +1990,7 @@ GameObject:
   - component: {fileID: 229423162}
   - component: {fileID: 229423161}
   - component: {fileID: 229423160}
+  - component: {fileID: 229423163}
   m_Layer: 6
   m_Name: Triangle Door
   m_TagString: Default
@@ -2009,7 +2010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 973992017}
   isColorOverall: 1
   isShapeOverall: 1
@@ -2075,6 +2075,27 @@ Transform:
   m_Father: {fileID: 647977248}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &229423163
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229423159}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &234408449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,7 +2571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6f5c9141e4ac44be99e2df62c02ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _color: {r: 0, g: 0, b: 0, a: 0}
   _shape: 
   isColorOverall: 1
@@ -3844,7 +3864,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -4179,7 +4199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6f5c9141e4ac44be99e2df62c02ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _color: {r: 0, g: 0, b: 0, a: 0}
   _shape: 
   isColorOverall: 1
@@ -4347,9 +4366,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1406605418}
-  - {fileID: 1312321421}
-  - {fileID: 1683259548}
   - {fileID: 1923272126}
+  - {fileID: 1683259548}
   - {fileID: 1071290052}
   - {fileID: 676659140}
   - {fileID: 772915734}
@@ -4372,6 +4390,7 @@ GameObject:
   - component: {fileID: 676659140}
   - component: {fileID: 676659139}
   - component: {fileID: 676659138}
+  - component: {fileID: 676659141}
   m_Layer: 0
   m_Name: Yellow Door
   m_TagString: Yellow
@@ -4391,7 +4410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 2106459628}
   isColorOverall: 1
   isShapeOverall: 1
@@ -4456,6 +4474,27 @@ Transform:
   m_Father: {fileID: 647977248}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!95 &676659141
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676659137}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &680358709
 GameObject:
   m_ObjectHideFlags: 0
@@ -4690,7 +4729,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -5039,6 +5078,7 @@ GameObject:
   - component: {fileID: 772915734}
   - component: {fileID: 772915736}
   - component: {fileID: 772915735}
+  - component: {fileID: 772915737}
   m_Layer: 0
   m_Name: Yellow Door (1)
   m_TagString: Yellow
@@ -5074,7 +5114,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 2052645974}
   isColorOverall: 1
   isShapeOverall: 1
@@ -5123,6 +5162,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.5}
   m_EdgeRadius: 0
+--- !u!95 &772915737
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772915733}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &778858310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5182,7 +5242,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1312321421}
   m_Father: {fileID: 1406605418}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5462,7 +5523,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -6122,7 +6183,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6f5c9141e4ac44be99e2df62c02ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _color: {r: 0, g: 0, b: 0, a: 0}
   _shape: 
   isColorOverall: 1
@@ -6417,7 +6477,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -6661,6 +6721,7 @@ MonoBehaviour:
   Circle: {fileID: 21300000, guid: 5b2318e161863114ba1cfd85636adc64, type: 3}
   _circleColliderSize: {x: 1.5, y: 1.6}
   _box2DPlayer: {fileID: 1004014676}
+  body: {fileID: 1215666127}
 --- !u!1 &1071290049
 GameObject:
   m_ObjectHideFlags: 0
@@ -6672,6 +6733,7 @@ GameObject:
   - component: {fileID: 1071290052}
   - component: {fileID: 1071290051}
   - component: {fileID: 1071290050}
+  - component: {fileID: 1071290053}
   m_Layer: 0
   m_Name: Red Door
   m_TagString: Red
@@ -6691,7 +6753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 846626189}
   isColorOverall: 1
   isShapeOverall: 1
@@ -6756,6 +6817,27 @@ Transform:
   m_Father: {fileID: 647977248}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1071290053
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071290049}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1079089916
 GameObject:
   m_ObjectHideFlags: 0
@@ -7091,7 +7173,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -7554,6 +7636,7 @@ GameObject:
   - component: {fileID: 1215797385}
   - component: {fileID: 1215797387}
   - component: {fileID: 1215797386}
+  - component: {fileID: 1215797388}
   m_Layer: 7
   m_Name: Square Door (1)
   m_TagString: Default
@@ -7590,7 +7673,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 603083057}
   isColorOverall: 1
   isShapeOverall: 1
@@ -7639,6 +7721,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.5}
   m_EdgeRadius: 0
+--- !u!95 &1215797388
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215797384}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1235209471
 GameObject:
   m_ObjectHideFlags: 0
@@ -8161,15 +8264,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312321420}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.33, y: -5.09, z: 0.38613704}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -17.885717, y: -0.728569, z: 0}
+  m_LocalScale: {x: 1.4285711, y: 1.4285711, z: 1.4285713}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1081301112}
   - {fileID: 918311983}
   - {fileID: 69606986}
-  m_Father: {fileID: 647977248}
+  m_Father: {fileID: 817874959}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1312321422
@@ -8184,7 +8287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 918311984}
   isColorOverall: 1
   isShapeOverall: 1
@@ -8430,7 +8532,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -8538,6 +8640,7 @@ GameObject:
   - component: {fileID: 1406605418}
   - component: {fileID: 1406605419}
   - component: {fileID: 1406605420}
+  - component: {fileID: 1406605421}
   m_Layer: 8
   m_Name: Blue Circle Door
   m_TagString: Blue
@@ -8594,7 +8697,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.023105323}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8605,7 +8708,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2, y: 1.5}
+  m_Size: {x: 2, y: 1.0126452}
   m_EdgeRadius: 0
 --- !u!114 &1406605420
 MonoBehaviour:
@@ -8619,10 +8722,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 684504941}
   isColorOverall: 1
   isShapeOverall: 1
+--- !u!95 &1406605421
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406605417}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1407326144
 GameObject:
   m_ObjectHideFlags: 0
@@ -8718,6 +8841,7 @@ GameObject:
   - component: {fileID: 1418995717}
   - component: {fileID: 1418995719}
   - component: {fileID: 1418995718}
+  - component: {fileID: 1418995720}
   m_Layer: 8
   m_Name: Circle Door (1)
   m_TagString: Default
@@ -8754,7 +8878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 2132238009}
   isColorOverall: 1
   isShapeOverall: 1
@@ -8803,6 +8926,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.5}
   m_EdgeRadius: 0
+--- !u!95 &1418995720
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418995716}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1466768338
 GameObject:
   m_ObjectHideFlags: 0
@@ -9043,7 +9187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6f5c9141e4ac44be99e2df62c02ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _color: {r: 0, g: 0, b: 0, a: 0}
   _shape: 
   isColorOverall: 1
@@ -9094,7 +9237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6f5c9141e4ac44be99e2df62c02ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _color: {r: 0, g: 0, b: 0, a: 0}
   _shape: 
   isColorOverall: 1
@@ -9292,6 +9434,7 @@ GameObject:
   - component: {fileID: 1643046194}
   - component: {fileID: 1643046193}
   - component: {fileID: 1643046192}
+  - component: {fileID: 1643046195}
   m_Layer: 7
   m_Name: Square Door
   m_TagString: Default
@@ -9311,7 +9454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 1379765248}
   isColorOverall: 1
   isShapeOverall: 1
@@ -9377,6 +9519,27 @@ Transform:
   m_Father: {fileID: 647977248}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1643046195
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643046191}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1683259547
 GameObject:
   m_ObjectHideFlags: 0
@@ -9388,6 +9551,7 @@ GameObject:
   - component: {fileID: 1683259548}
   - component: {fileID: 1683259550}
   - component: {fileID: 1683259549}
+  - component: {fileID: 1683259551}
   m_Layer: 7
   m_Name: Blue Square Door
   m_TagString: Blue
@@ -9425,7 +9589,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 2033373790}
   isColorOverall: 1
   isShapeOverall: 1
@@ -9474,6 +9637,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.5}
   m_EdgeRadius: 0
+--- !u!95 &1683259551
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683259547}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1694486518
 GameObject:
   m_ObjectHideFlags: 0
@@ -9767,7 +9951,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6f5c9141e4ac44be99e2df62c02ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _color: {r: 0, g: 0, b: 0, a: 0}
   _shape: 
   isColorOverall: 1
@@ -10512,7 +10695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6f5c9141e4ac44be99e2df62c02ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _color: {r: 0, g: 0, b: 0, a: 0}
   _shape: 
   isColorOverall: 1
@@ -10528,6 +10710,7 @@ GameObject:
   - component: {fileID: 1923272126}
   - component: {fileID: 1923272128}
   - component: {fileID: 1923272127}
+  - component: {fileID: 1923272129}
   m_Layer: 6
   m_Name: Yellow Triangle Door (1)
   m_TagString: Yellow
@@ -10543,7 +10726,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923272125}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.34, y: 1.9, z: 0.38613704}
+  m_LocalPosition: {x: 1.34, y: 1.9000001, z: 0.38613704}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10564,7 +10747,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 234408451}
   isColorOverall: 1
   isShapeOverall: 1
@@ -10613,6 +10795,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 1.5}
   m_EdgeRadius: 0
+--- !u!95 &1923272129
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923272125}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1962641216
 GameObject:
   m_ObjectHideFlags: 0
@@ -11127,7 +11330,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -11284,7 +11487,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99a6f5c9141e4ac44be99e2df62c02ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   _shape: 
   isColorOverall: 1
@@ -11316,6 +11518,7 @@ GameObject:
   - component: {fileID: 2096281890}
   - component: {fileID: 2096281889}
   - component: {fileID: 2096281888}
+  - component: {fileID: 2096281891}
   m_Layer: 8
   m_Name: Circle Door
   m_TagString: Default
@@ -11335,7 +11538,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7747706f60fd284d824099676398d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isOut: 0
   _box2D: {fileID: 1110357774}
   isColorOverall: 1
   isShapeOverall: 1
@@ -11401,6 +11603,27 @@ Transform:
   m_Father: {fileID: 647977248}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!95 &2096281891
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096281887}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: adafb0eda41155644bbb3b6262294c6d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2103177541
 GameObject:
   m_ObjectHideFlags: 0
@@ -11426,7 +11649,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2103177541}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.15, y: 0.91, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11518,7 +11741,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -11663,7 +11886,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -11800,6 +12023,10 @@ PrefabInstance:
     - target: {fileID: 4388954078835778061, guid: eb9a7a739839ce842803d9ea050cebcc, type: 3}
       propertyPath: m_Name
       value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7871852708292041522, guid: eb9a7a739839ce842803d9ea050cebcc, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
